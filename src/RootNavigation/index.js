@@ -7,7 +7,7 @@ import NetInfo from '@react-native-community/netinfo';
 import { enableScreens } from 'react-native-screens';
 // import { CustomTab } from '../Utils/CustomTab';
 import StartScreen from '../Screens/AuthScreens/StartScreen';
-
+import LocationScreen from '../Screens/AuthScreens/LocationScreen';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -29,6 +29,7 @@ export default function App() {
   const beforeLoggedIn = {
     
     StartScreen:StartScreen,
+    LocationScreen:LocationScreen
    
   };
   
@@ -50,7 +51,7 @@ export default function App() {
   return (
     <NavigationContainer >
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name={'InitialScreen'} component={StartScreen} />
+        <Stack.Screen name={'InitialScreen'} component={AuthStack} />
         {/* <Stack.Screen name={'AuthStack'} component={AuthStack} /> */}
        {/* // <Stack.Screen name={'BottomTab'} component={BottomTab} /> */}
       </Stack.Navigator>

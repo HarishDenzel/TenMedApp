@@ -6,9 +6,9 @@ const { width, height } = Dimensions.get("window");
 
 
 const fontFamily = {
-    Roboto_Regular: "Poppins-Regular",
+    Poppins_Regular: "Poppins-Regular",
     Poppins_Medium: "Poppins-Medium",
-    Poppins_Bold: "Roboto-SemiBold",
+    Poppins_Bold: "Poppins-Bold",
 
    
 }
